@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Art et Fleurs – Fleuriste à Verrières-le-Buisson | Bouquets & Compositions</title>
+  <meta name="description" content="Art et Fleurs, fleuriste artisan à Verrières-le-Buisson. Bouquets, compositions florales, plantes, livraison. Noté 5/5. Partenaire Florajet.">
+  <meta property="og:title" content="Art et Fleurs – Fleuriste à Verrières-le-Buisson">
+  <meta property="og:description" content="Fleuriste artisan à Verrières-le-Buisson. Bouquets, compositions, plantes, livraison le jour même. Noté 5/5.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="#hero" class="header__logo">
+        <span class="header__logo-name">Art <span>&</span> Fleurs</span>
+      </a>
+      <nav class="header__nav" id="nav">
+        <ul class="header__nav-list">
+          <li><a href="#about" class="header__nav-link">La Boutique</a></li>
+          <li><a href="#services" class="header__nav-link">Nos Fleurs</a></li>
+          <li><a href="#galerie" class="header__nav-link">Galerie</a></li>
+          <li><a href="#infos" class="header__nav-link">Infos pratiques</a></li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <a href="tel:+33169205205" class="header__phone" aria-label="Appeler Art et Fleurs">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </a>
+        <a href="tel:+33169205205" class="btn btn--primary btn--sm">Appeler</a>
+      </div>
+      <button class="header__burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== MOBILE MENU ========== -->
+  <div class="mobile-menu" id="mobileMenu">
+    <nav class="mobile-menu__nav">
+      <ul>
+        <li><a href="#about" class="mobile-menu__link">La Boutique</a></li>
+        <li><a href="#services" class="mobile-menu__link">Nos Fleurs</a></li>
+        <li><a href="#galerie" class="mobile-menu__link">Galerie</a></li>
+        <li><a href="#infos" class="mobile-menu__link">Infos pratiques</a></li>
+      </ul>
+      <div class="mobile-menu__actions">
+        <a href="tel:+33169205205" class="btn btn--primary">Appeler la boutique</a>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=Art+et+Fleurs,44+Boulevard+du+Marechal+Foch,91370+Verrieres-le-Buisson" target="_blank" rel="noopener" class="btn btn--outline">Itinéraire</a>
+      </div>
+    </nav>
+  </div>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <div class="hero__bg-pattern"></div>
+      <!-- Replace with a real photo of the boutique storefront from Google Maps -->
+      <img src="assets/images/hero-boutique.jpg" alt="Devanture fleurie de la boutique Art et Fleurs à Verrières-le-Buisson" class="hero__img" loading="eager" onerror="this.style.display='none'">
+      <div class="hero__overlay"></div>
+    </div>
+    <div class="hero__content">
+      <svg class="hero__icon" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><path d="M9 12c0-3 3-4.5 3-7.5 0 3 3 4.5 3 7.5a3 3 0 1 1-6 0z"/></svg>
+      <p class="hero__subtitle">Fleuriste artisan &middot; Verrières-le-Buisson</p>
+      <h1 class="hero__title">Art <em>&</em> Fleurs</h1>
+      <p class="hero__tagline">Des créations florales uniques, avec passion et savoir-faire artisanal.</p>
+      <div class="hero__badges">
+        <span class="badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          5/5 — PagesJaunes
+        </span>
+        <span class="badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          94% recommandé
+        </span>
+        <span class="badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          Livraison le jour même
+        </span>
+      </div>
+      <div class="hero__cta">
+        <a href="tel:+33169205205" class="btn btn--gold btn--lg">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          01 69 20 52 05
+        </a>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=Art+et+Fleurs,44+Boulevard+du+Marechal+Foch,91370+Verrieres-le-Buisson" target="_blank" rel="noopener" class="btn btn--white btn--lg">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
+          Venir en boutique
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== LA BOUTIQUE ========== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__image-wrap reveal">
+          <!-- Replace with a real interior/bouquet photo from Google Maps or Facebook -->
+          <div class="about__image-placeholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><path d="M9 12c0-3 3-4.5 3-7.5 0 3 3 4.5 3 7.5a3 3 0 1 1-6 0z"/></svg>
+            <span>Photo boutique (assets/images/about.jpg)</span>
+          </div>
+        </div>
+        <div class="about__text reveal">
+          <span class="section__label">La Boutique</span>
+          <h2 class="section__title">L'art floral au cœur de Verrières-le-Buisson</h2>
+          <p>Au 44 boulevard du Maréchal Foch, Art et Fleurs vous accueille dans un univers où la fleur est reine. Dès la devanture, savamment mise en scène, l'émerveillement commence.</p>
+          <p>À l'intérieur, vous découvrez des <strong>créations originales</strong> de toutes couleurs, tailles et budgets : bouquets, compositions florales, plantes d'intérieur et d'extérieur. Chaque réalisation témoigne de l'imagination et du savoir-faire de l'équipe.</p>
+          <div class="about__highlights">
+            <div class="about__highlight">
+              <div class="about__highlight-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              </div>
+              <span class="about__highlight-text">Partenaire Florajet</span>
+            </div>
+            <div class="about__highlight">
+              <div class="about__highlight-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+              </div>
+              <span class="about__highlight-text">Livraison dans la journée</span>
+            </div>
+          </div>
+          <a href="tel:+33169205205" class="btn btn--primary">Nous contacter</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES ========== -->
+  <section class="services section section--alt" id="services">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">Nos Créations</span>
+        <h2 class="section__title">Des fleurs pour chaque occasion</h2>
+        <p class="section__desc">Bouquets du quotidien, compositions d'exception, plantes vertes ou fleuries — nous donnons vie à vos envies.</p>
+      </div>
+
+      <div class="services__grid">
+
+        <div class="service-card reveal">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><path d="M9 12c0-3 3-4.5 3-7.5 0 3 3 4.5 3 7.5a3 3 0 1 1-6 0z"/></svg>
+          </div>
+          <h3>Bouquets</h3>
+          <p>Des bouquets frais composés avec soin pour toutes les occasions : anniversaires, remerciements, ou simplement pour le plaisir.</p>
+          <span class="service-card__price">Roses à partir de 3 €</span>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+          </div>
+          <h3>Compositions florales</h3>
+          <p>Créations originales et sur-mesure : mariage, deuil, événements. Le patron y met toute son imagination.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Plantes</h3>
+          <p>Plantes d'intérieur et d'extérieur pour embellir votre quotidien. Orchidées, plantes vertes et bien plus.</p>
+          <span class="service-card__price">Orchidées à partir de 40 €</span>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          </div>
+          <h3>Livraison</h3>
+          <p>Envoi de fleurs fraîches à vos proches grâce au réseau Florajet. Livraison dans la journée disponible.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <h3>Mariages & événements</h3>
+          <p>Décoration florale complète pour vos mariages et événements. Des résultats que nos clients qualifient de « au-delà de nos espérances ».</p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h3>Deuil</h3>
+          <p>Compositions de deuil réalisées avec respect et délicatesse, pour accompagner vos moments de recueillement.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== IMAGE BREAK / CITATION ========== -->
+  <section class="image-break">
+    <div class="image-break__bg">
+      <!-- Replace with a real photo from Google Maps (interior) -->
+      <img src="assets/images/break-flowers.jpg" alt="Compositions florales Art et Fleurs" class="image-break__img" loading="lazy" onerror="this.style.display='none'">
+      <div class="image-break__overlay"></div>
+    </div>
+    <div class="image-break__content reveal">
+      <blockquote class="image-break__quote">
+        &laquo; Des fleuristes ? Non, des artistes. Le rêve est réalité : des créations toutes plus originales les unes que les autres. &raquo;
+      </blockquote>
+      <p class="image-break__source">— Avis client vérifié, PagesJaunes</p>
+    </div>
+  </section>
+
+  <!-- ========== REASSURANCE ========== -->
+  <section class="reassurance section" id="reassurance">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">Pourquoi nous choisir</span>
+        <h2 class="section__title">Un savoir-faire reconnu</h2>
+      </div>
+      <div class="reassurance__grid">
+        <div class="reassurance__item reveal">
+          <div class="reassurance__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <h3>Noté 5/5</h3>
+          <p>Une note parfaite sur PagesJaunes et 94% de recommandation sur Facebook.</p>
+        </div>
+        <div class="reassurance__item reveal">
+          <div class="reassurance__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><path d="M9 12c0-3 3-4.5 3-7.5 0 3 3 4.5 3 7.5a3 3 0 1 1-6 0z"/></svg>
+          </div>
+          <h3>Créations uniques</h3>
+          <p>Chaque composition est une oeuvre originale, fruit de l'imagination et de l'expertise du patron.</p>
+        </div>
+        <div class="reassurance__item reveal">
+          <div class="reassurance__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          </div>
+          <h3>Livraison Florajet</h3>
+          <p>Partenaire du réseau Florajet pour envoyer des fleurs fraîches partout en France, dans la journée.</p>
+        </div>
+        <div class="reassurance__item reveal">
+          <div class="reassurance__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h3>En plein cœur de la ville</h3>
+          <p>44 Bd du Maréchal Foch, facilement accessible en bus (arrêt Foch-Leclerc, ligne 196).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== AVIS CLIENTS ========== -->
+  <section class="avis section section--alt" id="avis">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">Avis clients</span>
+        <h2 class="section__title">Ce que disent nos clients</h2>
+      </div>
+      <div class="avis__grid">
+        <div class="avis-card reveal">
+          <div class="avis-card__stars">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="avis-card__text">&laquo; Un fleuriste fantastique. À chaque fois que je passe la porte, j'en ai plein les yeux. Les fleurs sont magnifiques, les bouquets et compositions tellement beaux. &raquo;</p>
+          <p class="avis-card__author">Client vérifié</p>
+          <p class="avis-card__source">PagesJaunes</p>
+        </div>
+        <div class="avis-card reveal">
+          <div class="avis-card__stars">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="avis-card__text">&laquo; Client fidèle depuis plusieurs années, nous leur avons confié la décoration florale de notre mariage. Résultat au-delà de nos espérances. &raquo;</p>
+          <p class="avis-card__author">Client vérifié</p>
+          <p class="avis-card__source">PagesJaunes</p>
+        </div>
+        <div class="avis-card reveal">
+          <div class="avis-card__stars">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="avis-card__text">&laquo; Toujours de très belles compositions. Beaucoup d'imagination de la part du patron. Un vrai plaisir pour les yeux. &raquo;</p>
+          <p class="avis-card__author">Client vérifié</p>
+          <p class="avis-card__source">PagesJaunes</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== GALERIE ========== -->
+  <section class="galerie section section--green" id="galerie">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">Galerie</span>
+        <h2 class="section__title">Notre univers en images</h2>
+      </div>
+      <div class="galerie__grid reveal">
+        <div class="galerie__item galerie__item--wide">
+          <!-- Large photo: storefront or full interior shot -->
+          <div class="galerie__placeholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            <span>assets/images/galerie-1.jpg</span>
+          </div>
+        </div>
+        <div class="galerie__item">
+          <!-- Bouquet or composition close-up -->
+          <div class="galerie__placeholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            <span>assets/images/galerie-2.jpg</span>
+          </div>
+        </div>
+        <div class="galerie__item">
+          <!-- Another creation or plant arrangement -->
+          <div class="galerie__placeholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            <span>assets/images/galerie-3.jpg</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== LIGHTBOX ========== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Galerie photo agrandie">
+    <button class="lightbox__close" aria-label="Fermer">&times;</button>
+    <img class="lightbox__img" src="" alt="">
+    <button class="lightbox__prev" aria-label="Image précédente">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+    </button>
+    <button class="lightbox__next" aria-label="Image suivante">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+    </button>
+  </div>
+
+  <!-- ========== INFOS PRATIQUES ========== -->
+  <section class="infos section" id="infos">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">Infos pratiques</span>
+        <h2 class="section__title">Nous trouver</h2>
+      </div>
+      <div class="infos__grid">
+        <div class="infos__details reveal">
+
+          <div class="infos__block">
+            <h3>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
+              Adresse
+            </h3>
+            <p>44 Boulevard du Maréchal Foch<br>91370 Verrières-le-Buisson</p>
+            <p class="infos__transport">Bus Foch-Leclerc (ligne 196)</p>
+          </div>
+
+          <div class="infos__block">
+            <h3>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              Téléphone
+            </h3>
+            <a href="tel:+33169205205" class="infos__phone">01 69 20 52 05</a>
+          </div>
+
+          <div class="infos__block">
+            <h3>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Horaires
+            </h3>
+            <table class="infos__hours">
+              <tbody>
+                <tr><td>Lundi</td><td class="infos__closed">Fermé</td></tr>
+                <tr><td>Mardi – Samedi</td><td>9h00 – 13h00 / 14h30 – 19h00</td></tr>
+                <tr><td>Dimanche</td><td class="infos__closed">Fermé</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="infos__actions">
+            <a href="tel:+33169205205" class="btn btn--primary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              Appeler
+            </a>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Art+et+Fleurs,44+Boulevard+du+Marechal+Foch,91370+Verrieres-le-Buisson" target="_blank" rel="noopener" class="btn btn--outline">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
+              Itinéraire
+            </a>
+            <a href="https://www.facebook.com/p/Art-Fleurs-100043017502525/" target="_blank" rel="noopener" class="btn btn--outline">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              Facebook
+            </a>
+          </div>
+        </div>
+
+        <div class="infos__map reveal">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1314.5!2d2.2672!3d48.74458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e679d632c837e7%3A0xa5d6f8094ecab41b!2sArt%20et%20Fleurs!5e0!3m2!1sfr!2sfr!4v1"
+            width="100%"
+            height="100%"
+            style="border:0; border-radius: 12px;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Carte Google Maps de Art et Fleurs, Verrières-le-Buisson">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA FINAL ========== -->
+  <section class="cta-final section">
+    <div class="cta-final__bg">
+      <div class="cta-final__bg-pattern"></div>
+    </div>
+    <div class="container cta-final__content reveal">
+      <span class="section__label" style="color: var(--gold-light);">Envie de fleurs ?</span>
+      <h2 class="cta-final__title">Offrez des fleurs, offrez des émotions</h2>
+      <p class="cta-final__text">Appelez-nous ou passez directement en boutique. Nous composons votre bouquet selon vos envies et votre budget.</p>
+      <div class="cta-final__actions">
+        <a href="tel:+33169205205" class="btn btn--gold btn--lg">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          01 69 20 52 05
+        </a>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=Art+et+Fleurs,44+Boulevard+du+Marechal+Foch,91370+Verrieres-le-Buisson" target="_blank" rel="noopener" class="btn btn--white btn--lg">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
+          Itinéraire
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="footer__logo">Art & Fleurs</span>
+        <p>Fleuriste &middot; Verrières-le-Buisson</p>
+      </div>
+      <nav class="footer__nav">
+        <a href="#about">La Boutique</a>
+        <a href="#services">Nos Fleurs</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#infos">Infos pratiques</a>
+      </nav>
+      <div class="footer__contact">
+        <a href="tel:+33169205205">01 69 20 52 05</a>
+        <span>44 Bd du Maréchal Foch, 91370 Verrières-le-Buisson</span>
+      </div>
+      <div class="footer__social">
+        <a href="https://www.facebook.com/p/Art-Fleurs-100043017502525/" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+      </div>
+      <p class="footer__copy">&copy; 2026 Art et Fleurs. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
